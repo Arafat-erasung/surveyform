@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>surveyform</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <main>
+            <h1 id="title">Survey Form</h1>
+            <p id="description"><i>Thank you for taking time to fill this form</i></p>
+            <form id="survey-form">
+                <div class="form-control">
+                    <label for="name-label">Name</label>
+                    <input type="text" id="name-label" placeholder="Enter your name" required><br>
+                    <label for="email-label">Email</label>
+                    <input type="email" id="email-label" placeholder="Enter your email address" required><br>
+                    <label for="number-label">Age</label>
+                    <input type="number" id="number-label" placeholder="Age" min="15" max="59"><br>
+                </div>
+                <div class="form-control">
+                    <label for="dropdown">Select your education level</label>
+                    <select id="dropdown" >
+                        <option value="Tertiary">Tertiary</option>
+                        <option value="Secondary">Secondary</option>
+                        <option value="Basic">Basic</option>   
+                    </select><br>
+                </div>
+                    <div class="form-control">
+                    <label>Would you recommend this to your friends?</label>
+                        
+                    <label for="op1"><input type="radio" id="op1" name="op">Sure</label>
+                    <label for="op2"><input type="radio" id="op2" name="op">Maybe</label>
+                    <label for="op3"><input type="radio" id="op3" name="op">No</label>
+                </div>
+                <div class="form-control">
+                    <label for="drop-down1">How Would you describe your curriculum?</label>
+                    <select id="drop-down1" >
+                        <option value="Helpful">Helpful</option>
+                        <option value="Nothelpful">Not helpful</option>
+                        <option value="Nightmare">Nightmare</option>   
+                    </select><br>
+                </div>
+                <div class="form-control">
+                    <label>What Would you like to see improved?<small>(check all that apply)</small></label>
+
+                    <label for="box1"><input type="checkbox" id="op1" name="op">subjects</label>
+                    <label for="box2"><input type="checkbox" id="op2" name="op">whole curriculum</label>
+                    <label for="box3"><input type="checkbox" id="op3" name="op">infrastructure</label>
+                    <label for="box4"><input type="checkbox" id="op1" name="op">food</label>
+                    <label for="box5"><input type="checkbox" id="op2" name="op">reference materials</label>
+                    <label for="box6"><input type="checkbox" id="op3" name="op">internet access</label>
+                    <label for="box7"><input type="checkbox" id="op1" name="op">mode of assessment</label>
+                    <label for="box8"><input type="checkbox" id="op2" name="op">mode of delivery</label>
+                    <label for="box9"><input type="checkbox" id="op3" name="op">academic calender</label>
+                </div>
+                <div class="form-control">
+                <label for="comments">Enter your comments and suggestions below: </label>
+                <textarea name="comments" id="comments" placeholder="Enter your comments or suggestions here..."></textarea>
+                </div>
+                <div class="form-control">
+                    <label for="submit"></label>
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+            
+    </body>
+</html>
